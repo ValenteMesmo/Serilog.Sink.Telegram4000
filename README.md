@@ -1,2 +1,2 @@
-# Serilog.Sink.Telegram4000
+# Serilog.Sinks.Telegram4000
  
