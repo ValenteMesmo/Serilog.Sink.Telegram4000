@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>Serilog.Sink.Telegram4000.Standard</name>
+        <name>Serilog.Sinks.Telegram4000.Standard</name>
     </assembly>
     <members>
     </members>

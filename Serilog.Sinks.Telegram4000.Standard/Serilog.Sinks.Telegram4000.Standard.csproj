@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="..\Serilog.Sink.Telegram4000.Shared\TelegramSink.cs" Link="TelegramSink.cs" />
+    <Compile Include="..\Serilog.Sinks.Telegram4000.Shared\TelegramSink.cs" Link="TelegramSink.cs" />
   </ItemGroup>
 
   <ItemGroup>
