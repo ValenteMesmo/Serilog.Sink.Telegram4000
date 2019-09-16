@@ -89,24 +89,24 @@ namespace Serilog
                 : Environment.NewLine + Environment.NewLine + logEvent.Exception.ToString();
 
             if (logEvent.Level == LogEventLevel.Verbose)
-                prefix = "*VERBOSE* ";
+                prefix = "*VERBOSE*: ";
 
             if (logEvent.Level == LogEventLevel.Debug)
-                prefix = "*DEBUG* ";
+                prefix = "*DEBUG*: ";
 
             if (logEvent.Level == LogEventLevel.Information)
-                prefix = "*INFO* ";
+                prefix = "*INFO*: ";
 
             if (logEvent.Level == LogEventLevel.Warning)
-                prefix = "*WARNING* ";
+                prefix = "*WARNING*: ";
 
             if (logEvent.Level == LogEventLevel.Error)
-                prefix = "ERROR: ";
+                prefix = "*ERROR*: ";
 
             if (logEvent.Level == LogEventLevel.Fatal)
-                prefix = "*FATAL* ";
+                prefix = "*FATAL*: ";
 
-            return $@"```{prefix}{format}{sufix}```";
+            return $@"{prefix}{format}```{sufix}```";
         }
     }
 
