@@ -53,7 +53,8 @@ namespace Serilog
                         JsonConvert.SerializeObject(new
                         {
                             text = message,
-                            chat_id = ChatId
+                            chat_id = ChatId,
+                            parse_mode = "markdown"
                         })
                         , Encoding.UTF8
                         , "application/json"
